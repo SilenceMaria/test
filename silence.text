@@ -1,1 +1,13 @@
 add by sliven 2014-11-24 11:27
+public static void main(String args){
+}
+
+LOCAL_PATH := $(call my-dir)
+include $(CLEAR_VARS)
+LOCAL_MODULE := TEST
+LOCAL_MODULE_TAGS := user
+LOCAL_SRC_FILE := $(LOCAL_PATH)/TEST.apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_CERTIFICATE := platform
+include $(BUILD_PREBUILT)
